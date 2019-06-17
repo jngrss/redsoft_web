@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "staticweb3": {
+    "redsoft": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/staticweb3",
+            "outputPath": "dist/redsoft",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,7 +30,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/parallax-js/dist/parallax.min.js",
+              "node_modules/skrollr/dist/skrollr.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -62,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "staticweb3:build"
+            "browserTarget": "redsoft:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "staticweb3:build:production"
+              "browserTarget": "redsoft:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "staticweb3:build"
+            "browserTarget": "redsoft:build"
           }
         },
         "test": {
@@ -110,15 +113,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "staticweb3:serve"
+            "devServerTarget": "redsoft:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "staticweb3:serve:production"
+              "devServerTarget": "redsoft:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "staticweb3"
+  "defaultProject": "redsoft"
 }
