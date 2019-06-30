@@ -7,7 +7,7 @@ import { HeaderPageComponent } from './components/header-page/header-page.compon
 // export const Parallax: any;
 
 @Component({
-  selector: 'app-root',
+  selector: 'redsoft-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

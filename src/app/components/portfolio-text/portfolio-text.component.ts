@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-portfolio-text',
+  selector: 'redsoft-portfolio-text',
   templateUrl: './portfolio-text.component.html',
   styleUrls: ['./portfolio-text.component.scss']
 })
